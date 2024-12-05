@@ -17,7 +17,6 @@ for (args_i in 1:length(args)) {
 # --------------
 #  library
 # --------------
-library(ggplot2)
 library(survSuperLearner)
 library(CVXR)
 library(mgcv, warn.conflicts = FALSE)
