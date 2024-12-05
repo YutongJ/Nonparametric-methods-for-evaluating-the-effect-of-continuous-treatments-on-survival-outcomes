@@ -9,6 +9,8 @@
 #' @param As A vector of treatments considered in the dataset. For discrete treatment, include each treatment value once. For continuous treatments, include all treatment values.
 #' @param continuous Whether if the treatment is continuous. It affects the estimation of P(A|W).
 #' @param gn_As The estimated densities. Default is NULL.
+#' @param event.SL.library Library of candidate learners to use to estimate the conditional survival of the event. Should have the same structure as the \code{SL.library} argument to the \code{SuperLearner} function in the \code{SuperLearner} package.
+#' @param cens.SL.library Library of candidate learners to use to estimate the conditional survival of censoring.
 #' @param G_type The type of h used for constructing H set. We have several options: sign, indicator, indicator_knots, basis.
 #' @param knots If G_type is indicator_knots, need to specify this value. Default is 10 and NULL for others.
 #' @param structure structure constraint: "flexible" or "monotone" omega's.
